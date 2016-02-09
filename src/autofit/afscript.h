@@ -4,7 +4,7 @@
 /*                                                                         */
 /*    Auto-fitter scripts (specification only).                            */
 /*                                                                         */
-/*  Copyright 2013-2015 by                                                 */
+/*  Copyright 2013-2016 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg.                      */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used,       */
@@ -66,6 +66,12 @@
           HB_SCRIPT_HEBREW,
           HINTING_BOTTOM_TO_TOP,
           "\xD7\x9D" ) /* ם */
+
+  SCRIPT( knda, KNDA,
+          "Kannada",
+          HB_SCRIPT_KANNADA,
+          HINTING_BOTTOM_TO_TOP,
+          "\xE0\xB3\xA6 \xE0\xB2\xAC" ) /* ೦ ಬ */
 
   /* only digit zero has a simple shape in the Khmer script */
   SCRIPT( khmr, KHMR,
@@ -141,12 +147,6 @@
   SCRIPT( guru, GURU,
           "Gurmukhi",
           HB_SCRIPT_GURMUKHI,
-          HINTING_BOTTOM_TO_TOP,
-          "o" ) /* XXX */
-
-  SCRIPT( knda, KNDA,
-          "Kannada",
-          HB_SCRIPT_KANNADA,
           HINTING_BOTTOM_TO_TOP,
           "o" ) /* XXX */
 

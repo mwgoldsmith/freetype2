@@ -4,7 +4,7 @@
 /*                                                                         */
 /*    The FreeType private base classes (body).                            */
 /*                                                                         */
-/*  Copyright 1996-2015 by                                                 */
+/*  Copyright 1996-2016 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg.                      */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used,       */
@@ -688,7 +688,6 @@
         /* both `fpgm' and `prep' tables are missing                 */
         if ( ( mode == FT_RENDER_MODE_LIGHT                   &&
                !FT_DRIVER_HINTS_LIGHTLY( driver ) )             ||
-             face->internal->ignore_unpatented_hinter           ||
              ( FT_IS_SFNT( face )                             &&
                ttface->num_locations                          &&
                ttface->max_profile.maxSizeOfInstructions == 0 &&
@@ -4202,7 +4201,8 @@
 
 
           MD5_Init( &ctx );
-          MD5_Update( &ctx, bitmap.buffer, rows * pitch );
+          if ( bitmap.buffer )
+            MD5_Update( &ctx, bitmap.buffer, rows * pitch );
           MD5_Final( md5, &ctx );
 
           FT_TRACE3(( "MD5 checksum for %dx%d bitmap:\n"

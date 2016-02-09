@@ -4,7 +4,7 @@
 /*                                                                         */
 /*    The FreeType glyph loader (specification).                           */
 /*                                                                         */
-/*  Copyright 2002-2015 by                                                 */
+/*  Copyright 2002-2016 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg                       */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used,       */
@@ -16,8 +16,8 @@
 /***************************************************************************/
 
 
-#ifndef __FTGLOADR_H__
-#define __FTGLOADR_H__
+#ifndef FTGLOADR_H_
+#define FTGLOADR_H_
 
 
 #include <ft2build.h>
@@ -148,7 +148,7 @@ FT_BEGIN_HEADER
 
 FT_END_HEADER
 
-#endif /* __FTGLOADR_H__ */
+#endif /* FTGLOADR_H_ */
 
 
 /* END */

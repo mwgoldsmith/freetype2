@@ -4,7 +4,7 @@
 /*                                                                         */
 /*    Type 1 driver interface (body).                                      */
 /*                                                                         */
-/*  Copyright 1996-2015 by                                                 */
+/*  Copyright 1996-2016 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg.                      */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used,       */
@@ -337,7 +337,8 @@
         if ( type1->subrs_hash )
         {
           /* convert subr index to array index */
-          size_t*  val = ft_hash_num_lookup( idx, type1->subrs_hash );
+          size_t*  val = ft_hash_num_lookup( (FT_Int)idx,
+                                             type1->subrs_hash );
 
 
           if ( val )

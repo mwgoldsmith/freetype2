@@ -4,7 +4,7 @@
 /*                                                                         */
 /*    Type 1 font loader (body).                                           */
 /*                                                                         */
-/*  Copyright 1996-2015 by                                                 */
+/*  Copyright 1996-2016 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg.                      */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used,       */
@@ -1405,7 +1405,7 @@
     FT_Memory  memory = parser->root.memory;
     FT_Error   error;
     FT_Int     num_subrs;
-    FT_Int     count;
+    FT_UInt    count;
     FT_Hash    hash = NULL;
 
     PSAux_Service  psaux = (PSAux_Service)face->psaux;

@@ -4,7 +4,7 @@
 /*                                                                         */
 /*    Auto-fitter hinting routines for latin writing system (body).        */
 /*                                                                         */
-/*  Copyright 2003-2015 by                                                 */
+/*  Copyright 2003-2016 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg.                      */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used,       */
@@ -95,7 +95,7 @@
       const char*  p;
 
 #ifdef FT_DEBUG_LEVEL_TRACE
-      FT_ULong  ch;
+      FT_ULong  ch = 0;
 #endif
 
       p          = script_class->standard_charstring;

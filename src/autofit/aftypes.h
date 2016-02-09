@@ -4,7 +4,7 @@
 /*                                                                         */
 /*    Auto-fitter types (specification only).                              */
 /*                                                                         */
-/*  Copyright 2003-2015 by                                                 */
+/*  Copyright 2003-2016 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg.                      */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used,       */
@@ -29,8 +29,8 @@
    *************************************************************************/
 
 
-#ifndef __AFTYPES_H__
-#define __AFTYPES_H__
+#ifndef AFTYPES_H_
+#define AFTYPES_H_
 
 #include <ft2build.h>
 
@@ -255,7 +255,7 @@ extern void*  _af_debug_hints;
    *    outline according to the results of the glyph analyzer.
    */
 
-#define __AFWRTSYS_H__  /* don't load header files */
+#define AFWRTSYS_H_  /* don't load header files */
 #undef  WRITING_SYSTEM
 #define WRITING_SYSTEM( ws, WS )    \
           AF_WRITING_SYSTEM_ ## WS,
@@ -270,7 +270,7 @@ extern void*  _af_debug_hints;
 
   } AF_WritingSystem;
 
-#undef  __AFWRTSYS_H__
+#undef  AFWRTSYS_H_
 
 
   typedef struct  AF_WritingSystemClassRec_
@@ -644,7 +644,7 @@ extern void*  _af_debug_hints;
 
 FT_END_HEADER
 
-#endif /* __AFTYPES_H__ */
+#endif /* AFTYPES_H_ */
 
 
 /* END */

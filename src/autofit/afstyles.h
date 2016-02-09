@@ -4,7 +4,7 @@
 /*                                                                         */
 /*    Auto-fitter styles (specification only).                             */
 /*                                                                         */
-/*  Copyright 2013-2015 by                                                 */
+/*  Copyright 2013-2016 by                                                 */
 /*  David Turner, Robert Wilhelm, and Werner Lemberg.                      */
 /*                                                                         */
 /*  This file is part of the FreeType project, and may only be used,       */
@@ -115,6 +115,13 @@
          AF_BLUE_STRINGSET_HEBR,
          AF_COVERAGE_DEFAULT )
 
+  STYLE( knda_dflt, KNDA_DFLT,
+         "Kannada default style",
+         AF_WRITING_SYSTEM_LATIN,
+         AF_SCRIPT_KNDA,
+         AF_BLUE_STRINGSET_KNDA,
+         AF_COVERAGE_DEFAULT )
+
   STYLE( khmr_dflt, KHMR_DFLT,
          "Khmer default style",
          AF_WRITING_SYSTEM_LATIN,
@@ -203,7 +210,6 @@
 
   STYLE_DEFAULT_INDIC( gujr, GUJR, "Gujarati" )
   STYLE_DEFAULT_INDIC( guru, GURU, "Gurmukhi" )
-  STYLE_DEFAULT_INDIC( knda, KNDA, "Kannada" )
   STYLE_DEFAULT_INDIC( limb, LIMB, "Limbu" )
   STYLE_DEFAULT_INDIC( mlym, MLYM, "Malayalam" )
   STYLE_DEFAULT_INDIC( orya, ORYA, "Oriya" )
